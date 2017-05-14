@@ -4,8 +4,10 @@ MAINTAINER Pawel T.  Jochym <pawel.jochym@ifj.edu.pl>
 
 RUN conda config --add channels conda-forge
 RUN conda config --add channels jochym
-RUN conda install -y ase spglib jupyter nglview
+RUN conda install -y ase spglib nglview elastic
 RUN conda install -y -c damianavila82 rise
+
+cp -r notebooks $HOME/work
 
 USER root
 
