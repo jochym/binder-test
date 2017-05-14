@@ -7,6 +7,8 @@ RUN conda config --add channels jochym
 RUN conda install -y ase spglib nglview elastic
 RUN conda install -y -c damianavila82 rise
 
+RUN git clone https://github.com/jochym/abinitio-workshop.git /home/jovyan/work
+
 USER root
 
 # Add dependencies
