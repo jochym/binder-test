@@ -7,8 +7,6 @@ RUN conda config --add channels jochym
 RUN conda install -y ase spglib nglview elastic
 RUN conda install -y -c damianavila82 rise
 
-cp -r notebooks $HOME/work
-
 USER root
 
 # Add dependencies
